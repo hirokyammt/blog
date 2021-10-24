@@ -16,7 +16,7 @@ export default function AboutMe({ preview }) {
           <article className="mb-32">
             <Head>
               <title>
-                About me | {SITE_NAME}
+                About me | Hiroom.
               </title>
               <meta name="description" content={HOME_DESCRIPTION} />
               <meta property="og:url" content={`${HOME_URL}/about`} />
