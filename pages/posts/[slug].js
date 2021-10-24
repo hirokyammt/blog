@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router'
 import ErrorPage from 'next/error'
+import Head from 'next/head'
 import Container from '../../components/container'
 import PostBody from '../../components/post-body'
 import Header from '../../components/header'
@@ -7,8 +8,8 @@ import PostHeader from '../../components/post-header'
 import Layout from '../../components/layout'
 import { getPostBySlug, getAllPosts } from '../../lib/api'
 import PostTitle from '../../components/post-title'
-import Head from 'next/head'
 import markdownToHtml from '../../lib/markdownToHtml'
+import { HOME_URL, SITE_NAME } from '../../lib/constants'
 
 export default function Post({ post, morePosts, preview }) {
   const router = useRouter()
@@ -28,7 +29,13 @@ export default function Post({ post, morePosts, preview }) {
                 <title>
                   {post.title}
                 </title>
-                <meta property="og:image" content={post.ogImage.url} />
+                <meta name="description" content={post.excerpt} />
+                <meta property="og:url" content={`${HOME_URL}/posts/${post.slug}`} />
+                <meta property="og:type" content="article" />
+                <meta property="og:title" content={post.title} />
+                <meta property="og:site_name" content={SITE_NAME} />
+                <meta property="og:description" content={post.excerpt} />
+                <meta property="og:image" content={`${HOME_URL}${post.coverImage}`} />
               </Head>
               <PostHeader
                 title={post.title}
