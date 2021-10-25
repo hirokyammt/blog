@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa'
 import Container from '../components/container'
+import { SITE_NAME } from '../lib/constants'
 
 export default function Footer() {
   return (
@@ -10,7 +11,7 @@ export default function Footer() {
           <div className="flex flex-col lg:pr-4 lg:w-1/2">
             <h3 className="text-4xl lg:text-5xl font-bold tracking-tighter leading-tight text-center lg:text-left mb-10">
               <Link href="/">
-                <a className="hover:opacity-80">Hiroom.Blog</a>
+                <a className="hover:opacity-80">{SITE_NAME}</a>
               </Link>
             </h3>
             <div className="text-4xl flex justify-center lg:justify-start duration-200 mb-10 lg:mb-0">

@@ -16,12 +16,12 @@ export default function AboutMe({ preview }) {
           <article className="mb-32">
             <Head>
               <title>
-                About me | Hiroom.
+                About me | {SITE_NAME}
               </title>
               <meta name="description" content={HOME_DESCRIPTION} />
               <meta property="og:url" content={`${HOME_URL}/about`} />
               <meta property="og:type" content="article" />
-              <meta property="og:title" content="About me | Hiroom." />
+              <meta property="og:title" content={`About me | ${SITE_NAME}`} />
               <meta property="og:site_name" content={SITE_NAME} />
               <meta property="og:description" content={HOME_DESCRIPTION} />
               <meta property="og:image" content={HOME_IMAGE_URL} />               
