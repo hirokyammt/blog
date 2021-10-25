@@ -4,6 +4,7 @@ import Container from '../components/container'
 import Header from '../components/header'
 import CoverImage from '../components/cover-image'
 import Layout from '../components/layout'
+import BackToHome from '../components/back-to-home'
 import { HOME_DESCRIPTION, HOME_URL, SITE_NAME, HOME_IMAGE_URL } from '../lib/constants'
 
 export default function AboutMe({ preview }) {
@@ -47,6 +48,7 @@ export default function AboutMe({ preview }) {
                 </a>
                 .
               </p>
+              <BackToHome />
             </div>
           </article>
         </>

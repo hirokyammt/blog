@@ -3,16 +3,22 @@
 }
 
 .markdown p,
-.markdown ul,
-.markdown ol,
+.markdown ul {
+  @apply list-disc list-inside my-4;
+}
+
+.markdown ol {
+  @apply list-decimal list-inside my-4;
+}
+
 .markdown blockquote {
-  @apply my-6;
+  @apply px-4 py-1 italic border-l-4 border-accent-2;
 }
 
 .markdown h2 {
-  @apply text-3xl mt-12 mb-4 leading-snug;
+  @apply text-2xl leading-snug mt-12 mb-4;
 }
 
 .markdown h3 {
-  @apply text-2xl mt-8 mb-4 leading-snug;
+  @apply text-xl leading-snug mt-8 mb-4;
 }

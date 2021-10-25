@@ -2,13 +2,14 @@ import { useRouter } from 'next/router'
 import ErrorPage from 'next/error'
 import Head from 'next/head'
 import Container from '../../components/container'
-import PostBody from '../../components/post-body'
 import Header from '../../components/header'
-import PostHeader from '../../components/post-header'
 import Layout from '../../components/layout'
-import { getPostBySlug, getAllPosts } from '../../lib/api'
 import PostTitle from '../../components/post-title'
+import PostHeader from '../../components/post-header'
+import PostBody from '../../components/post-body'
+import PostFooter from '../../components/post-footer'
 import markdownToHtml from '../../lib/markdownToHtml'
+import { getPostBySlug, getAllPosts } from '../../lib/api'
 import { HOME_URL, SITE_NAME } from '../../lib/constants'
 
 export default function Post({ post, morePosts, preview }) {
@@ -44,6 +45,7 @@ export default function Post({ post, morePosts, preview }) {
                 author={post.author}
               />
               <PostBody content={post.content} />
+              <PostFooter />
             </article>
           </>
         )}
