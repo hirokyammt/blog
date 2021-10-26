@@ -1,11 +1,12 @@
 import PostPreview from '../components/post-preview'
+import BackToHome from '../components/back-to-home'
 
-export default function MoreStories({ posts }) {
+export default function CategorizedStories({ posts, category }) {
   return (
     <section>
-      <h2 className="mb-8 text-6xl md:text-7xl font-bold tracking-tighter leading-tight">
-        More Stories
-      </h2>
+      <h1 className="text-5xl md:text-7xl font-bold capitalize tracking-tighter leading-tight mt-16 mb-16 md:mb-12">
+        # {category.replace('-', ' ')}
+      </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32 mb-32">
         {posts.map((post) => (
           <PostPreview
@@ -13,12 +14,13 @@ export default function MoreStories({ posts }) {
             title={post.title}
             coverImage={post.coverImage}
             date={post.date}
+            slug={post.slug}
             excerpt={post.excerpt}
             tags={post.tags}
-            slug={post.slug}
           />
         ))}
       </div>
+      <BackToHome />
     </section>
   )
 }

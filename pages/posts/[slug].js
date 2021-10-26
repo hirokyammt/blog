@@ -3,14 +3,14 @@ import ErrorPage from 'next/error'
 import Head from 'next/head'
 import Container from '../../components/container'
 import Header from '../../components/header'
-import Layout from '../../components/layout'
 import PostTitle from '../../components/post-title'
 import PostHeader from '../../components/post-header'
 import PostBody from '../../components/post-body'
 import PostFooter from '../../components/post-footer'
-import markdownToHtml from '../../lib/markdownToHtml'
+import Layout from '../../components/layout'
 import { getPostBySlug, getAllPosts } from '../../lib/api'
 import { HOME_URL, SITE_NAME } from '../../lib/constants'
+import markdownToHtml from '../../lib/markdownToHtml'
 
 export default function Post({ post, morePosts, preview }) {
   const router = useRouter()
@@ -36,16 +36,15 @@ export default function Post({ post, morePosts, preview }) {
                 <meta property="og:title" content={post.title} />
                 <meta property="og:site_name" content={SITE_NAME} />
                 <meta property="og:description" content={post.excerpt} />
-                <meta property="og:image" content={`${HOME_URL}${post.coverImage}`} />
+                <meta property="og:image" content={`${HOME_URL}${post.coverImage}`} />  
               </Head>
               <PostHeader
                 title={post.title}
                 coverImage={post.coverImage}
                 date={post.date}
-                author={post.author}
               />
               <PostBody content={post.content} />
-              <PostFooter />
+              <PostFooter tags={post.tags} />
             </article>
           </>
         )}
@@ -59,9 +58,8 @@ export async function getStaticProps({ params }) {
     'title',
     'date',
     'slug',
-    'author',
+    'tags',
     'content',
-    'ogImage',
     'coverImage',
     'excerpt',
   ])
