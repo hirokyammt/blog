@@ -1,13 +1,14 @@
-import DateFormatter from '../components/date-formatter'
-import CoverImage from './cover-image'
 import Link from 'next/link'
+import DateFormatter from '../components/date-formatter'
+import CoverImage from '../components/cover-image'
+import Hashtags from '../components/hashtags'
 
 export default function PostPreview({
   title,
   coverImage,
   date,
   excerpt,
-  author,
+  tags,
   slug,
 }) {
   return (
@@ -21,7 +22,7 @@ export default function PostPreview({
           width={600}
         />
       </div>
-      <h3 className="text-3xl mb-3 leading-snug">
+      <h3 className="text-3xl leading-snug mb-3">
         <Link as={`/posts/${slug}`} href="/posts/[slug]">
           <a className="hover:underline">{title}</a>
         </Link>
@@ -30,6 +31,7 @@ export default function PostPreview({
         <DateFormatter dateString={date} />
       </div>
       <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
+      <Hashtags tags={tags} />
     </div>
   )
 }
