@@ -1,8 +1,9 @@
-import DateFormatter from '../components/date-formatter'
-import CoverImage from '../components/cover-image'
 import PostTitle from '../components/post-title'
+import CoverImage from '../components/cover-image'
+import DateFormatter from '../components/date-formatter'
+import CopyLink from '../components/copy-link'
 
-export default function PostHeader({ title, coverImage, date, author }) {
+export default function PostHeader({ title, coverImage, date, slug }) {
   return (
     <>
       <PostTitle>{title}</PostTitle>
@@ -10,6 +11,7 @@ export default function PostHeader({ title, coverImage, date, author }) {
         <CoverImage title={title} src={coverImage} height={630} width={1200} />
       </div>
       <div className="max-w-2xl mx-auto">
+        <CopyLink slug={slug} />
         <div className="mb-6 text-lg">
           <DateFormatter dateString={date} />
         </div>
