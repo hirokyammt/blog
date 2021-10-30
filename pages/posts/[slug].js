@@ -42,9 +42,10 @@ export default function Post({ post, morePosts, preview }) {
                 title={post.title}
                 coverImage={post.coverImage}
                 date={post.date}
+                slug={post.slug}
               />
               <PostBody content={post.content} />
-              <PostFooter tags={post.tags} />
+              <PostFooter tags={post.tags} slug={post.slug} />
             </article>
           </>
         )}
