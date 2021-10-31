@@ -2,8 +2,8 @@
 title: After you joined a new team as a product manager
 excerpt: You finally joined a new team as a product manager. Congrats! Here, we discuss what you should do as a product manager in the first week, the first 30 days and the first 60 days after you joined the team.
 coverImage: /assets/after-you-joined-a-new-team-as-a-product-manager/cover.webp
-date: "2021-10-27"
-tags: [product-management]
+date: "2021-10-31"
+tags: [product-management, teamwork]
 ---
 
 You finally joined a new team as a product manager. Congrats! Here, we discuss what you should do as a product manager in the first week, the first 30 days and the first 60 days after you joined the team.
