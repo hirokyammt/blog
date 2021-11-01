@@ -2,7 +2,7 @@ import { useRouter } from 'next/router'
 import ErrorPage from 'next/error'
 import Head from 'next/head'
 import Container from '../../components/container'
-import CategorizedStories from '../../components/categorized-stories'
+import CategorizedPosts from '../../components/categorized-posts'
 import Header from '../../components/header'
 import PostTitle from '../../components/post-title'
 import Layout from '../../components/layout'
@@ -36,7 +36,7 @@ export default function Category({ posts, category }) {
                 <meta property="og:image" content={`${HOME_URL}${HOME_IMAGE_URL}`} />
               </Head>
               {posts && (
-                <CategorizedStories posts={posts} category={category} />
+                <CategorizedPosts category={category} posts={posts} />
               )}
             </article>
           </>

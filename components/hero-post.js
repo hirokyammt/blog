@@ -13,7 +13,7 @@ export default function HeroPost({
 }) {
   return (
     <section>
-      <div className="mb-8 md:mb-16">
+      <div className="duration-200 hover:opacity-80 mb-8 md:mb-16">
         <CoverImage
           title={title}
           src={coverImage}

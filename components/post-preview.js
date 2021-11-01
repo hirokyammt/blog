@@ -13,7 +13,7 @@ export default function PostPreview({
 }) {
   return (
     <div>
-      <div className="mb-5">
+      <div className="duration-200 hover:opacity-80 mb-5">
         <CoverImage
           slug={slug}
           title={title}
