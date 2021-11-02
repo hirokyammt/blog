@@ -45,7 +45,7 @@ export default function Post({ post, morePosts, preview }) {
                 slug={post.slug}
               />
               <PostBody content={post.content} />
-              <PostFooter tags={post.tags} slug={post.slug} />
+              <PostFooter tags={post.tags} slug={post.slug} posts={morePosts} />
             </article>
           </>
         )}
@@ -64,14 +64,23 @@ export async function getStaticProps({ params }) {
     'coverImage',
     'excerpt',
   ])
+  const morePosts = getAllPosts([
+    'title',
+    'date',
+    'slug',
+    'tags',
+    'coverImage',
+    'excerpt',
+  ])
   const content = await markdownToHtml(post.content || '')
 
   return {
     props: {
       post: {
         ...post,
-        content,
+        content
       },
+      morePosts
     },
   }
 }
@@ -83,7 +92,7 @@ export async function getStaticPaths() {
     paths: posts.map((post) => {
       return {
         params: {
-          slug: post.slug,
+          slug: post.slug
         },
       }
     }),
