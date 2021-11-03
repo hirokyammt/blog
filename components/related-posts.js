@@ -13,7 +13,7 @@ export default function RelatedPosts({ posts }) {
             title={post.title}
             coverImage={post.coverImage}
             date={post.date}
-            excerpt={post.excerpt}
+            excerpt={`${post.excerpt.substr(0, 100)}...`}
             tags={post.tags}
             slug={post.slug}
           />
