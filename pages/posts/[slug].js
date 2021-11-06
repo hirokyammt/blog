@@ -64,7 +64,7 @@ export async function getStaticProps({ params }) {
     'coverImage',
     'excerpt',
   ])
-  const morePosts = getRelatedPosts([
+  const morePosts = getRelatedPosts(post.title, [
     'title',
     'date',
     'slug',
