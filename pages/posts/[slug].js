@@ -8,7 +8,7 @@ import PostHeader from '../../components/post-header'
 import PostBody from '../../components/post-body'
 import PostFooter from '../../components/post-footer'
 import Layout from '../../components/layout'
-import { getPostBySlug, getAllPosts } from '../../lib/api'
+import { getPostBySlug, getAllPosts, getRelatedPosts } from '../../lib/api'
 import { HOME_URL, SITE_NAME } from '../../lib/constants'
 import markdownToHtml from '../../lib/markdownToHtml'
 
@@ -64,7 +64,7 @@ export async function getStaticProps({ params }) {
     'coverImage',
     'excerpt',
   ])
-  const morePosts = getAllPosts([
+  const morePosts = getRelatedPosts([
     'title',
     'date',
     'slug',
