@@ -16,17 +16,17 @@ export default function Footer() {
             </h3>
             <div className="text-4xl flex justify-center lg:justify-start duration-200 mb-10 lg:mb-0">
               <Link href="https://twitter.com/hirokyammt">
-                <a className="mx-4 hover:opacity-80">
+                <a className="hover:opacity-80 mx-4">
                   <FaTwitter />
                 </a>
               </Link>
               <Link href="https://instagram.com/hirokyammt">
-                <a className="mx-4 hover:opacity-80">
+                <a className="hover:opacity-80 mx-4">
                   <FaInstagram />
                 </a>
               </Link>
               <Link href="https://linkedin.com/in/hirokyammt">
-                <a className="mx-4 hover:opacity-80">
+                <a className="hover:opacity-80 mx-4">
                   <FaLinkedin />
                 </a>
               </Link>
