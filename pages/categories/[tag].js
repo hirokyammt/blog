@@ -25,12 +25,12 @@ export default function Category({ posts, category }) {
             <article className="mb-32">
               <Head>
                 <title>
-                  Categorized stories by {category.replace('-', ' ')} | Hiroom.Blog
+                  Categorized by {category.replace('-', ' ')} | {SITE_NAME}
                 </title>
                 <meta name="description" content={HOME_DESCRIPTION} />
                 <meta property="og:url" content={`${HOME_URL}/categories/${category}`} />
                 <meta property="og:type" content="article" />
-                <meta property="og:title" content={`Categorized stories by ${category.replace('-', ' ')} | ${SITE_NAME}`} />
+                <meta property="og:title" content={`Categorized by ${category.replace('-', ' ')} | ${SITE_NAME}`} />
                 <meta property="og:site_name" content={SITE_NAME} />
                 <meta property="og:description" content={HOME_DESCRIPTION} />
                 <meta property="og:image" content={`${HOME_URL}${HOME_IMAGE_URL}`} />
