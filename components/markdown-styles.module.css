@@ -3,12 +3,17 @@
 }
 
 .markdown p,
+
 .markdown ul {
   @apply list-disc list-inside my-4;
 }
 
 .markdown ol {
   @apply list-decimal list-inside my-4;
+}
+
+.markdown a {
+  @apply underline hover:no-underline;
 }
 
 .markdown blockquote {

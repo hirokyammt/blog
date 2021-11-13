@@ -42,7 +42,7 @@ export default function AboutMe({ preview }) {
                 You can contact me on Twitter {''}
                 <a
                   href="https://twitter.com/hirokyammt"
-                  className="font-bold hover:underline"
+                  className="font-bold underline hover:no-underline"
                 >
                   @hirokyammt
                 </a>
