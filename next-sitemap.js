@@ -1,6 +1,4 @@
-import { HOME_URL } from '../lib/constants'
-
 module.exports = {
-  siteUrl: {HOME_URL},
+  siteUrl: process.env.SITE_URL || 'https://hiroomblog.com',
   generateRobotsTxt: true,
 }
