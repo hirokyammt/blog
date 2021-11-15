@@ -6,7 +6,7 @@ export default function CopyLink({ slug }) {
   return (
       <div onClick={(event) => copyToClipboard(event, `${HOME_URL}/posts/${slug}`)}>
         <span className="py-4 flex justify-center items-center rounded border border-accent-2 cursor-pointer hover:opacity-80 my-8">
-          <ImLink size={20} />
+          <ImLink size={20} title={'Link'} />
           <span className="pl-2 tracking-wide">Click to Copy Link</span>
         </span>
       </div>

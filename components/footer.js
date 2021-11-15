@@ -9,25 +9,25 @@ export default function Footer() {
       <Container>
         <div className="py-28 flex flex-col lg:flex-row items-center justify-center">
           <div className="flex flex-col lg:pl-12 lg:w-1/2">
-            <h3 className="text-4xl lg:text-5xl font-bold tracking-tighter leading-tight text-center lg:text-left mb-10">
+            <div className="text-4xl lg:text-5xl font-bold tracking-tighter leading-tight text-center lg:text-left mb-10">
               <Link href="/">
                 <a className="hover:opacity-80">{SITE_NAME}</a>
               </Link>
-            </h3>
+            </div>
             <div className="text-4xl flex justify-center lg:justify-start duration-200 mb-10 lg:mb-0">
               <Link href="https://twitter.com/hirokyammt">
                 <a className="hover:opacity-80 mx-4">
-                  <FaTwitter />
+                  <FaTwitter title={'Twitter'} />
                 </a>
               </Link>
               <Link href="https://instagram.com/hirokyammt">
                 <a className="hover:opacity-80 mx-4">
-                  <FaInstagram />
+                  <FaInstagram title={'Instagram'} />
                 </a>
               </Link>
               <Link href="https://linkedin.com/in/hirokyammt">
                 <a className="hover:opacity-80 mx-4">
-                  <FaLinkedin />
+                  <FaLinkedin title={'LinkedIn'} />
                 </a>
               </Link>
             </div>
