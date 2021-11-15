@@ -22,11 +22,11 @@ export default function PostPreview({
           width={600}
         />
       </div>
-      <h3 className="text-3xl leading-snug mb-3">
+      <h2 className="text-3xl leading-snug mb-3">
         <Link as={`/posts/${slug}`} href="/posts/[slug]">
           <a className="hover:underline">{title}</a>
         </Link>
-      </h3>
+      </h2>
       <div className="text-lg mb-4">
         <DateFormatter dateString={date} />
       </div>

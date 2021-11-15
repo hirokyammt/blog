@@ -3,9 +3,9 @@ import PostPreview from '../components/post-preview'
 export default function RelatedPosts({ posts }) {
   return (
     <section>
-      <h2 className="text-5xl md:text-6xl font-bold tracking-tighter leading-tight mb-8">
+      <div className="text-5xl md:text-6xl font-bold tracking-tighter leading-tight mb-8">
         Related Posts
-      </h2>
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-12 gap-y-20 mb-32">
         {posts.map((post) => (
           <PostPreview
