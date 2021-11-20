@@ -38,13 +38,8 @@ export default function Post({ post, morePosts, preview }) {
                 <meta property="og:description" content={post.excerpt} />
                 <meta property="og:image" content={`${HOME_URL}${post.coverImage}`} />  
               </Head>
-              <PostHeader
-                title={post.title}
-                coverImage={post.coverImage}
-                date={post.date}
-                slug={post.slug}
-              />
-              <PostBody content={post.content} />
+              <PostHeader title={post.title} coverImage={post.coverImage} />
+              <PostBody date={post.date} content={post.content} />
               <PostFooter tags={post.tags} slug={post.slug} posts={morePosts} />
             </article>
           </>

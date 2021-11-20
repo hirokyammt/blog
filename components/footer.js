@@ -8,7 +8,7 @@ export default function Footer() {
     <footer className="bg-accent-1 border-t border-accent-2">
       <Container>
         <div className="py-28 flex flex-col lg:flex-row items-center justify-center">
-          <div className="flex flex-col lg:pl-12 lg:w-1/2">
+          <div className="lg:pl-12 lg:w-1/2 flex flex-col">
             <div className="text-4xl lg:text-5xl font-bold tracking-tighter leading-tight text-center lg:text-left mb-10">
               <Link href="/">
                 <a className="hover:opacity-80">{SITE_NAME}</a>
@@ -32,7 +32,7 @@ export default function Footer() {
               </Link>
             </div>
           </div>
-          <div className="flex flex-col lg:pl-8 lg:w-1/2">
+          <div className="lg:pl-8 lg:w-1/2 flex flex-col">
             <Link href="https://github.com/hirokyammt/blog">
               <a className="flex justify-center hover:underline mb-4">
                 View on GitHub

@@ -3,11 +3,11 @@ import BackToHome from '../components/back-to-home'
 
 export default function CategorizedPosts({ category, posts }) {
   return (
-    <section>
+    <section className="lg:px-12">
       <h1 className="text-5xl md:text-7xl font-bold capitalize tracking-tighter leading-tight mt-16 mb-16 md:mb-12">
         # {category.replace('-', ' ')}
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32 mb-32">
+      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-24 gap-y-20 md:gap-y-32 mb-32">
         {posts.map((post) => (
           <PostPreview
             key={post.slug}
