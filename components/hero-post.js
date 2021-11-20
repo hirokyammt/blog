@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import DateFormatter from '../components/date-formatter'
 import CoverImage from '../components/cover-image'
+import DateFormatter from '../components/date-formatter'
 import Hashtags from '../components/hashtags'
 
 export default function HeroPost({
@@ -12,7 +12,7 @@ export default function HeroPost({
   slug,
 }) {
   return (
-    <section>
+    <section className="lg:px-12 mb-20 md:mb-28">
       <div className="duration-200 hover:opacity-80 mb-8 md:mb-16">
         <CoverImage
           title={title}
@@ -22,7 +22,7 @@ export default function HeroPost({
           width={1200}
         />
       </div>
-      <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">
+      <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8">
         <div>
           <h2 className="mb-4 text-5xl lg:text-6xl leading-tight">
             <Link as={`/posts/${slug}`} href="/posts/[slug]">
