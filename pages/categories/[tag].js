@@ -9,13 +9,13 @@ import Layout from '../../components/layout'
 import { getCategorizedPosts, getAllTags } from '../../lib/api'
 import { HOME_DESCRIPTION, HOME_URL, SITE_NAME, HOME_IMAGE_URL } from '../../lib/constants'
 
-export default function Category({ posts, category }) {
+export default function Category({ posts, category, preview }) {
   const router = useRouter()
   if (!router.isFallback && !posts) {
     return <ErrorPage statusCode={404} />
   }
   return (
-    <Layout>
+    <Layout preview={preview}>
       <Container>
         <Header />
         {router.isFallback ? (
