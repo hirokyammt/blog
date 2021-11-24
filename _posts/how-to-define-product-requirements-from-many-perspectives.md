@@ -1,6 +1,6 @@
 ---
 title: How to define product requirements from many perspectives
-excerpt: The main role of product managers is to define product requirements and put into words as a PRD. In the phase, product managers have to take many perspectives into account, otherwise the product requirements need to be changed over and over again during development or even after finishing it, but how?
+excerpt: The main role of product managers is to define product requirements and put them into words as a PRD. In this phase, product managers have to take many perspectives into account, otherwise the product requirements need to be changed over and over again during development or even after finishing it, but how?
 coverImage: /assets/how-to-define-product-requirements-from-many-perspectives/cover.webp
 date: "2021-11-24"
 tags: [product-management]
