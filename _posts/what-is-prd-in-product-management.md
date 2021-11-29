@@ -1,8 +1,8 @@
 ---
 title: What is PRD in product management?
-excerpt: In the Internet industry, product requirements documents (PRDs) have been the most important artifact product managers create. PRDs mainly describe why are the products/features needed or not needed and what kind of features should be implemented so that everyone in the team is to be on the same page.
+excerpt: In the Internet industry, product requirements documents (PRDs) have been the most important artifact product managers create. PRDs mainly describe why the products/features are needed or not needed and what kind of features should be implemented so that everyone in the team is to be on the same page.
 coverImage: /assets/what-is-prd-in-product-management/cover.webp
-date: "2021-11-13"
+date: "2021-11-29"
 tags: [product-management]
 ---
 
