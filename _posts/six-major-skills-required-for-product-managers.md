@@ -1,6 +1,6 @@
 ---
 title: 6 major skills required for product managers
-excerpt: Effective product managers lead cross-functional teams to create the product customers love. To be like that, product managers must possess several skills. There are six major skills, I believe, required for product managers, not only proffessional knowledges about engineering, web design, business etc.
+excerpt: Effective product managers lead cross-functional teams to create the product customers love. To be like that, product managers must possess several skills. There are six major skills, I believe, required for product managers, not only professional knowledges about engineering, web design, business etc.
 coverImage: /assets/six-major-skills-required-for-product-managers/cover.webp
 date: "2021-12-05"
 tags: [product-management]
