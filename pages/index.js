@@ -14,11 +14,11 @@ export default function Index({ allPosts }) {
     <>
       <Layout>
         <Head>
-          <title>Hiroom.</title>
+          <title>Hiroom. | hiroomblog.com</title>
           <meta name="description" content={HOME_DESCRIPTION} />
           <meta property="og:url" content={HOME_URL} />
           <meta property="og:type" content="blog" />
-          <meta property="og:title" content="Hiroom." />
+          <meta property="og:title" content="Hiroom. | hiroomblog.com" />
           <meta property="og:site_name" content={SITE_NAME} />
           <meta property="og:description" content={HOME_DESCRIPTION} />
           <meta property="og:image" content={`${HOME_URL}${HOME_IMAGE_URL}`} />
