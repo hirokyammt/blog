@@ -5,7 +5,7 @@ import HeroPost from '../components/hero-post'
 import Intro from '../components/intro'
 import Layout from '../components/layout'
 import { getAllPosts } from '../lib/api'
-import { HOME_DESCRIPTION, HOME_URL, SITE_NAME, HOME_IMAGE_URL } from '../lib/constants'
+import { HOME_URL, SITE_NAME, HOME_IMAGE_URL, HOME_DESCRIPTION } from '../lib/constants'
 
 export default function Index({ allPosts }) {
   const heroPost = allPosts[0]

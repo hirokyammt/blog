@@ -4,7 +4,7 @@ import Header from '../components/header'
 import Layout from '../components/layout'
 import CoverImage from '../components/cover-image'
 import BackToHome from '../components/back-to-home'
-import { HOME_DESCRIPTION, HOME_URL, SITE_NAME, HOME_IMAGE_URL } from '../lib/constants'
+import { HOME_URL, SITE_NAME, HOME_IMAGE_URL, ABOUT_DESCRIPTION } from '../lib/constants'
 
 export default function AboutMe({ preview }) {
   return (
@@ -17,12 +17,12 @@ export default function AboutMe({ preview }) {
               <title>
                 About me | {SITE_NAME}
               </title>
-              <meta name="description" content={HOME_DESCRIPTION} />
+              <meta name="description" content={ABOUT_DESCRIPTION} />
               <meta property="og:url" content={`${HOME_URL}/about`} />
               <meta property="og:type" content="article" />
               <meta property="og:title" content={`About me | ${SITE_NAME}`} />
               <meta property="og:site_name" content={SITE_NAME} />
-              <meta property="og:description" content={HOME_DESCRIPTION} />
+              <meta property="og:description" content={ABOUT_DESCRIPTION} />
               <meta property="og:image" content={HOME_IMAGE_URL} />               
             </Head>
             <div className="max-w-2xl text-lg leading-relaxed mx-auto">
