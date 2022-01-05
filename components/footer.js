@@ -46,7 +46,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="py-2 text-sm flex justify-center">
-          &copy; 2021 Hiroki Yamamoto
+          &copy; 2022 Hiroki Yamamoto
         </div>
       </Container>
     </footer>
