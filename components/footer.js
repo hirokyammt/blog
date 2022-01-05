@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import { FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa'
 import Container from '../components/container'
+import SocialMedia from '../components/social-media'
 import { SITE_NAME } from '../lib/constants'
 
 export default function Footer() {
@@ -15,21 +15,7 @@ export default function Footer() {
               </Link>
             </div>
             <div className="text-4xl flex justify-center lg:justify-start duration-200 mb-10 lg:mb-0">
-              <Link href="https://twitter.com/hirokyammt">
-                <a className="hover:opacity-80 mx-4">
-                  <FaTwitter title={'Twitter'} />
-                </a>
-              </Link>
-              <Link href="https://instagram.com/hirokyammt">
-                <a className="hover:opacity-80 mx-4">
-                  <FaInstagram title={'Instagram'} />
-                </a>
-              </Link>
-              <Link href="https://linkedin.com/in/hirokyammt">
-                <a className="hover:opacity-80 mx-4">
-                  <FaLinkedin title={'LinkedIn'} />
-                </a>
-              </Link>
+              <SocialMedia />
             </div>
           </div>
           <div className="lg:pl-8 lg:w-1/2 flex flex-col">
