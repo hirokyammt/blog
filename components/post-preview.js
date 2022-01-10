@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import DateFormatter from '../components/date-formatter'
 import CoverImage from '../components/cover-image'
+import ReadMore from '../components/read-more'
 import Hashtags from '../components/hashtags'
 
 export default function PostPreview({
@@ -31,6 +32,7 @@ export default function PostPreview({
         <DateFormatter dateString={date} />
       </div>
       <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
+      <ReadMore slug={slug} />
       <Hashtags tags={tags} />
     </div>
   )
