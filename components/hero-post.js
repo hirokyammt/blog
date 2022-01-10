@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import CoverImage from '../components/cover-image'
 import DateFormatter from '../components/date-formatter'
+import ReadMore from '../components/read-more'
 import Hashtags from '../components/hashtags'
 
 export default function HeroPost({
@@ -35,6 +36,7 @@ export default function HeroPost({
         </div>
         <div>
           <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
+          <ReadMore slug={slug} />
           <Hashtags tags={tags} />
         </div>
       </div>

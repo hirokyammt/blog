@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import CoverImage from '../components/cover-image'
+import ReadMore from '../components/read-more'
 import Hashtags from '../components/hashtags'
 
 export default function RelatedPosts({ posts }) {
@@ -26,6 +27,7 @@ export default function RelatedPosts({ posts }) {
               </Link>
             </h3>
             <p className="text-lg leading-relaxed mb-4">{`${post.excerpt.substr(0, 140)}...`}</p>
+            <ReadMore slug={post.slug} />
             <Hashtags tags={post.tags} />
           </div>
         ))}
