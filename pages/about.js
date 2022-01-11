@@ -34,12 +34,11 @@ export default function AboutMe({ preview }) {
                 I have an ability of software development as well as
                 am getting better in marketing and design fields through working with cross-functional teams.
                 I am currently working on product management, project management and sometimes data science.
-                I would like to be a super product manager in the near future:)
               </p>
               <p>
                 This is a personal blog that stores my experience as a product manager.
                 The website itself is also developed by myself with Next.js and Markdown.
-                If you are interested in the source code, you can find the link below of GitHub.
+                If you are interested in the source code, you can find the Github link below.
               </p>
               <BackToHome />
             </div>
