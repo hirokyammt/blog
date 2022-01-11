@@ -13,8 +13,8 @@ export default function HeroPost({
   slug,
 }) {
   return (
-    <section className="lg:px-12 mb-20 md:mb-28">
-      <div className="duration-200 hover:opacity-80 mb-8 md:mb-16">
+    <section className="rounded border md:border-accent-2 lg:mx-12 mb-20 md:mb-28">
+      <div className="duration-200 hover:opacity-80 mb-4 md:mb-8">
         <CoverImage
           title={title}
           src={coverImage}
@@ -23,21 +23,21 @@ export default function HeroPost({
           width={1200}
         />
       </div>
-      <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8">
+      <div className="p-4 md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8">
         <div>
-          <h2 className="mb-4 text-4xl lg:text-6xl leading-tight">
+          <h2 className="text-4xl lg:text-6xl leading-tight mb-4">
             <Link as={`/posts/${slug}`} href="/posts/[slug]">
               <a className="hover:underline">{title}</a>
             </Link>
           </h2>
-          <div className="mb-4 md:mb-0 text-lg">
+          <div className="text-lg mb-4 md:mb-0">
             <DateFormatter dateString={date} />
           </div>
         </div>
         <div>
           <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
-          <ReadMore slug={slug} />
           <Hashtags tags={tags} />
+          <ReadMore slug={slug} />
         </div>
       </div>
     </section>
