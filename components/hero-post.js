@@ -13,7 +13,7 @@ export default function HeroPost({
   slug,
 }) {
   return (
-    <section className="rounded border md:border-accent-2 lg:mx-12 mb-20 md:mb-28">
+    <section className="rounded border md:border-0 border-accent-2 lg:mx-12 mb-20 md:mb-28">
       <div className="duration-200 hover:opacity-80 mb-4 md:mb-8">
         <CoverImage
           title={title}
