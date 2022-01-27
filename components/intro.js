@@ -4,7 +4,7 @@ export default function Intro() {
       <h1 className="text-7xl md:text-8xl font-bold tracking-tighter leading-tight">
         Hiroom.
       </h1>
-      <p className="text-center md:text-left text-lg font-bold mt-5 md:pl-8">
+      <p className="text-center md:text-left text-lg italic font-bold mt-5 md:pl-8">
         Insights for product management
       </p>
     </section>
