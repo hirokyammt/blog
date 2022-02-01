@@ -20,7 +20,7 @@ Finally, a product strategy improves your team's tactical decisions, since no or
 
 A product strategy should answer key questions such as: who will the product be useful to? How will it benefit those personas? How will the company's goals throughout the product's life cycle be? Put it in a simple way, a strategy should describe who the product is for, why personas would want to use or buy it, what the product is, what makes it stand out and why the product is worth the company's investment. A goal-first approach is the best path towards innovation for product managers.
 
-![strategy](/assets/how-to-create-your-product-strategy/strategy.webp)
+![strategy](/assets/create-your-product-strategy-before-jumping-into-roadmap-and-backlog/strategy.webp)
 
 The diagram above shows three key aspects you should consider in order to define a compelling strategy. The market represents the target customers and users of your product, i.e. the people who are likely to buy and use the product. The needs consist in the main problems your product solves or the primary benefit it provides. The key features are those aspects of your product that are essential to addressing the main problem or generating the primary benefit. The differentiators represent the aspects that make your product stand out from the crowd. Don't make the mistake of creating a product backlog or a wish list: focus on the three key aspects that will make your product be chosen over your competitors. The business goals capture how your product will benefit your company: is it going to increase revenue, help sell another product or service, reduce cost or increase the brand equity? Clarifying your business goals will help you choose the right KPIs and measure the performance of your product.
 
