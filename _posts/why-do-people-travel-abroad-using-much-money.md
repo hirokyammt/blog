@@ -1,6 +1,6 @@
 ---
 title: Why do people travel abroad using much money?
-excerpt: In foreign countries, there are many unusual things, such as language, culture, architecture, art, and food which are stimulating for you in good ways or sometimes bad ways.
+excerpt: In foreign countries, there are many unusual things, such as language, culture, architecture, art, and food which are stimulating for you in good ways or sometimes bad ways. There are many good effects for your usual life by traveling abroad.
 coverImage: /assets/why-do-people-travel-abroad-using-much-money/cover.webp
 date: "2022-02-17"
 tags: [travel]
