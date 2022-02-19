@@ -25,18 +25,18 @@ export default function Pager({ id, posts, totalIds }) {
       <div className="flex justify-between my-16">
         {prev ? (
           <Link as={`/archives/${prev}`} href="/archives/[prev]">
-            <a className="text-base hover:underline">
-              ← Prev page
+            <a className="text-lg hover:underline">
+              ← Prev
             </a>
           </Link>
         ) : ``}
-        <span>
+        <span className="text-lg">
           Page {id}
         </span>
         {next ? (
           <Link as={`/archives/${next}`} href="/archives/[next]">
-            <a className="text-base hover:underline">
-              Next page →
+            <a className="text-lg hover:underline">
+              Next →
             </a>
           </Link>
         ) : ``}
