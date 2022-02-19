@@ -12,7 +12,9 @@ import { getPostBySlug, getAllPosts, getRelatedPosts } from '../../lib/api'
 import { HOME_URL, SITE_NAME } from '../../lib/constants'
 import markdownToHtml from '../../lib/markdownToHtml'
 
-export default function Post({ post, morePosts, preview }) {
+const COUNT_OF_RELATED = 4
+
+export default function Post({ post, relatedPosts, preview }) {
   const router = useRouter()
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
@@ -40,7 +42,7 @@ export default function Post({ post, morePosts, preview }) {
               </Head>
               <PostHeader title={post.title} coverImage={post.coverImage} />
               <PostBody date={post.date} content={post.content} />
-              <PostFooter tags={post.tags} slug={post.slug} posts={morePosts} />
+              <PostFooter tags={post.tags} slug={post.slug} posts={relatedPosts} />
             </article>
           </>
         )}
@@ -59,7 +61,7 @@ export async function getStaticProps({ params }) {
     'coverImage',
     'excerpt',
   ])
-  const morePosts = getRelatedPosts(4, post.title, [
+  const relatedPosts = getRelatedPosts(COUNT_OF_RELATED, post.title, [
     'title',
     'date',
     'slug',
@@ -75,7 +77,7 @@ export async function getStaticProps({ params }) {
         ...post,
         content
       },
-      morePosts
+      relatedPosts
     },
   }
 }

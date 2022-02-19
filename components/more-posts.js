@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import PostPreview from '../components/post-preview'
 
 export default function MorePosts({ posts }) {
@@ -19,6 +20,13 @@ export default function MorePosts({ posts }) {
           />
         ))}
       </div>
+      <div className="text-right my-32">
+        <Link href="/archives/1">
+          <a className="text-lg hover:underline">
+            View all posts →
+          </a>
+        </Link>
+    </div>
     </section>
   )
 }
