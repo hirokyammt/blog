@@ -11,7 +11,7 @@ import { HOME_DESCRIPTION, HOME_URL, SITE_NAME, HOME_IMAGE_URL } from '../../lib
 
 const COUNT_PER_PAGE = 6
 
-export default function Archive({ id, posts, preview }) {
+export default function Archive({ id, posts, totalIds, preview }) {
   const router = useRouter()
   if (!router.isFallback && !posts) {
     return <ErrorPage statusCode={404} />
@@ -38,7 +38,7 @@ export default function Archive({ id, posts, preview }) {
                 <meta property="og:image" content={`${HOME_URL}${HOME_IMAGE_URL}`} />
               </Head>
               {posts && (
-                <Pager id={id} posts={posts} />
+                <Pager id={id} posts={posts} totalIds={totalIds} />
               )}
             </article>
           </>
@@ -49,22 +49,25 @@ export default function Archive({ id, posts, preview }) {
 }
 
 export async function getStaticProps({ params }) {
-  const id = params.id
-  const end = COUNT_PER_PAGE * id
-  const start = end - COUNT_PER_PAGE
-  const posts = getAllPosts([
+  const allPosts = getAllPosts([
     'title',
     'date',
     'slug',
     'tags',
     'coverImage',
     'excerpt',
-  ]).slice(start, end)
+  ])
+  const id = parseInt(params.id, 10)
+  const end = COUNT_PER_PAGE * id
+  const start = end - COUNT_PER_PAGE
+  const posts = allPosts.slice(start, end)
+  const totalIds = Math.ceil(allPosts.length / COUNT_PER_PAGE)
 
   return {
     props: {
       id,
-      posts
+      posts,
+      totalIds
     },
   }
 }

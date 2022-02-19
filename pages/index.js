@@ -7,7 +7,7 @@ import Layout from '../components/layout'
 import { getAllPosts } from '../lib/api'
 import { HOME_URL, SITE_NAME, HOME_IMAGE_URL, HOME_DESCRIPTION } from '../lib/constants'
 
-const COUNT_PER_PAGE = 11
+const COUNT_PER_PAGE = 9
 
 export default function Index({ posts }) {
   const heroPost = posts[0]
@@ -45,16 +45,17 @@ export default function Index({ posts }) {
 }
 
 export async function getStaticProps() {
-  const end = COUNT_PER_PAGE
-  const start = end - COUNT_PER_PAGE
-  const posts = getAllPosts([
+  const allPosts = getAllPosts([
     'title',
     'date',
     'slug',
     'tags',
     'coverImage',
     'excerpt',
-  ]).slice(start, end)
+  ])
+  const end = COUNT_PER_PAGE
+  const start = end - COUNT_PER_PAGE
+  const posts = allPosts.slice(start, end)
 
   return {
     props: { posts },
