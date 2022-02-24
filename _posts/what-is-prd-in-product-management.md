@@ -13,4 +13,4 @@ In the Internet industry, product requirements documents (PRDs) have been the mo
 - Feature Requirement - Describe requirements not specifically but at high-level for each component
 - Proposed Timeline - Assume how long the development is going to take for each team
 
-In short, a PRD will contain every information for releasing the product from scratch. However, at the same time, a PRD should generally avoid dictating specific implementations in order to later allow interface designers and engineers to use their expertise to provide optimal solutions to the requirements. The link below is the PRD I created for this website.
+In short, a PRD will contain every information for releasing the product from scratch. However, at the same time, a PRD should generally avoid dictating specific implementations in order to later allow interface designers and engineers to use their expertise to provide optimal solutions to the requirements.
