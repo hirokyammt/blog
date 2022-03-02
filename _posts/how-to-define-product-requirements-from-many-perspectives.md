@@ -2,13 +2,11 @@
 title: How to define product requirements from many perspectives
 excerpt: The main role of product managers is to define product requirements and put them into words as a PRD. In this phase, product managers have to take many perspectives into account, otherwise the product requirements need to be changed over and over again during development or even after finishing it, but how?
 coverImage: /assets/how-to-define-product-requirements-from-many-perspectives/cover.webp
-date: "2021-11-24"
+date: "2022-03-02"
 tags: [product-management]
 ---
 
-The main role of product managers is to define product requirements and put them into words as a PRD. In this phase, product managers have to take many perspectives into account, otherwise the product requirements need to be changed over and over again during development or even after finishing it, but how? Here, I devided into five groups the requirements you should consider when it comes to product management. Moreover, not only considering various requirements but also putting these into words eventually is essential because the main communication with the stakeholders is basically performed through PRDs. The link below is the PRD I created for this website.
-
-[PRD example](https://hiroom.notion.site/product-requirements-document-fd47f507d8544a338aea149af7bd1c65)
+The main role of product managers is to define product requirements and put them into words as a PRD (About PRD, it is explained in more detail in [What is PRD in product management?](https://hiroomblog.com/posts/what-is-prd-in-product-management)). In this phase, product managers have to take many perspectives into account, otherwise the product requirements need to be changed over and over again during development or even after finishing it, but how? Here, I devided into five groups the requirements you should consider when it comes to product management. Moreover, not only considering various requirements but also putting these into words eventually is essential because the main communication with the stakeholders is basically performed through PRDs.
 
 ## Business Requirements
 
