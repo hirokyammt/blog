@@ -7,29 +7,25 @@ export default function Footer() {
   return (
     <footer className="bg-accent-1 border-t border-accent-2">
       <Container>
-        <div className="py-28 flex flex-col lg:flex-row items-center justify-center">
-          <div className="lg:pl-12 lg:w-1/2 flex flex-col">
-            <div className="text-4xl lg:text-5xl font-bold tracking-tighter leading-tight text-center lg:text-left mb-10">
-              <Link href="/">
-                <a className="hover:opacity-80">{SITE_NAME}</a>
-              </Link>
-            </div>
-            <div className="text-4xl flex justify-center lg:justify-start duration-200 mb-10 lg:mb-0">
-              <SocialMedia />
-            </div>
-          </div>
-          <div className="lg:pl-8 lg:w-1/2 flex flex-col">
-            <Link href="https://github.com/hirokyammt/blog">
-              <a className="flex justify-center hover:underline mb-4">
-                View on GitHub
-              </a>
-            </Link>
-            <Link href="/about">
-              <a className="flex justify-center hover:underline mb-4">
-                About me
-              </a>
+        <div className="py-28 flex flex-col items-center justify-center">
+          <div className="text-4xl font-bold tracking-tighter leading-tight text-center mb-10">
+            <Link href="/">
+              <a className="hover:opacity-80">{SITE_NAME}</a>
             </Link>
           </div>
+          <div className="text-4xl flex justify-center duration-200 mb-10">
+            <SocialMedia />
+          </div>
+          <Link href="https://github.com/hirokyammt/blog">
+            <a className="flex justify-center hover:underline mb-4">
+              View on GitHub
+            </a>
+          </Link>
+          <Link href="/about">
+            <a className="flex justify-center hover:underline">
+              About me
+            </a>
+          </Link>
         </div>
         <div className="py-2 text-sm flex justify-center">
           &copy; 2022 Hiroki Yamamoto
