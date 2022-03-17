@@ -9,7 +9,7 @@ import Layout from '../../components/layout'
 import { getAllPosts } from '../../lib/api'
 import { HOME_DESCRIPTION, HOME_URL, SITE_NAME, HOME_IMAGE_URL } from '../../lib/constants'
 
-const COUNT_PER_PAGE = 6
+const COUNT_PER_PAGE = 10
 
 export default function Archive({ id, posts, totalIds, preview }) {
   const router = useRouter()
