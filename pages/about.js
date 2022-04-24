@@ -26,12 +26,15 @@ export default function AboutMe({ preview }) {
         <div className="h-screen flex bg-accent-1 border-b border-accent-2">
           <Container>
             <Header />
-            <section className="lg:px-12">
-              <div className="pt-16 text-lg absolute z-10">
+            <section className="lg:px-12">  
+              <div className="pt-8 text-lg absolute z-10">
                 <p>Hello! I am Hiroki,</p>
                 <p className="py-2 text-3xl font-bold">Product Manager</p>
-                <p>focused on software engineering and data science.</p>
+                <p>focus on software engineering and data science.</p>
                 <p className="py-4">Please have a seat and scroll down.</p>
+                <div className="pt-32 text-3xl text-bottom flex duration-200">
+                  <SocialMedia />
+                </div>
               </div>
               <Image
                 src={HOME_IMAGE_URL}
@@ -41,9 +44,6 @@ export default function AboutMe({ preview }) {
                 width={1200}
                 height={630}
               />
-              <div className="pt-8 text-2xl flex duration-200">
-                <SocialMedia />
-              </div>
             </section>
           </Container>
         </div>
