@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Container from '../components/container'
 import Header from '../components/header'
 import Layout from '../components/layout'
-import CoverImage from '../components/cover-image'
+import SocialMedia from '../components/social-media'
 import BackToHome from '../components/back-to-home'
 import { HOME_URL, SITE_NAME, HOME_IMAGE_URL, ABOUT_DESCRIPTION } from '../lib/constants'
 
@@ -23,30 +23,37 @@ export default function AboutMe({ preview }) {
           <meta property="og:description" content={ABOUT_DESCRIPTION} />
           <meta property="og:image" content={HOME_IMAGE_URL} />               
         </Head>
-        <div className="h-screen flex bg-accent-0">
+        <div className="h-screen flex bg-accent-1 border-b border-accent-2">
           <Container>
             <Header />
-            <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-12 gap-y-20 mb-32">
-              <div className="lg:px-12">
-                <p>Hello! I'm Hiroki</p>
-                <p className="text-3xl font-bold mb-1">Product Manager</p>
+            <section className="lg:px-12">
+              <div className="pt-16 text-lg absolute z-10">
+                <p>Hello! I am Hiroki,</p>
+                <p className="py-2 text-3xl font-bold">Product Manager</p>
+                <p>focused on software engineering and data science.</p>
+                <p className="py-4">Please have a seat and scroll down.</p>
               </div>
               <Image
                 src={HOME_IMAGE_URL}
-                alt={`Cover Image for`}
-                className="opacity-20"
-                layout="responsive"
+                alt="Cover Image for About me"
+                className="brightness-105 opacity-20"
+                layout="responsive"              
                 width={1200}
                 height={630}
               />
-            </div>
+              <div className="pt-8 text-2xl flex duration-200">
+                <SocialMedia />
+              </div>
+            </section>
           </Container>
         </div>
         <div className="max-w-2xl text-lg leading-relaxed mx-auto px-5">  
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tighter leading-tight md:leading-none mt-12 mb-8">About me</h1>
+          <h1 className="text-4xl md:text-5xl font-bold tracking-tighter leading-tight md:leading-none mt-12 mb-8">
+            About me
+          </h1>
           <p>
             I am a product manager at the largest e-commerce company in Japan.
-            I have an ability of software development as well as　am getting better in marketing and design fields through working with cross-functional teams.
+            I have an ability of software development as well as am getting better in marketing and design fields through working with cross-functional teams.
             I am currently working on product management, project management and sometimes data science.
           </p>
           <p>
