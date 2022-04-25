@@ -5,7 +5,7 @@ export default function SocialMedia() {
   return (
     <>
       <Link href="https://twitter.com/hirokyammt">
-        <a target="_blank" className="hover:opacity-80 mx-4">
+        <a target="_blank" className="hover:opacity-80 mr-4">
           <FaTwitter title={'Twitter'} />
         </a>
       </Link>
@@ -15,7 +15,7 @@ export default function SocialMedia() {
         </a>
       </Link>
       <Link href="https://linkedin.com/in/hirokyammt">
-        <a target="_blank" className="hover:opacity-80 mx-4">
+        <a target="_blank" className="hover:opacity-80 ml-4">
           <FaLinkedin title={'LinkedIn'} />
         </a>
       </Link>
