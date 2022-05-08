@@ -23,15 +23,15 @@ export default function AboutMe({ preview }) {
           <meta property="og:description" content={ABOUT_DESCRIPTION} />
           <meta property="og:image" content={HOME_IMAGE_URL} />               
         </Head>
-        <div className="h-screen flex items-center justify-center bg-accent-1 border-b border-accent-2">
-          <section className="mb-8">
+        <div className="h-screen flex items-center justify-center bggradient-t from-accent-1 border-b border-accent-2">
+          <section className="px-5">
             <Header />
             <div className="lg:px-12 text-lg md:text-xl">
               <p>Hello! I am Hiroki,</p>
               <p className="py-2 text-3xl md:text-4xl font-bold">Product Manager</p>
               <p>focus on software engineering and data science.</p>
-              <p className="py-4">Please have a seat and scroll down.</p>
-              <div className="pt-20 text-3xl md:text-4xl flex duration-200">
+              <p className="py-2">Please have a seat and scroll down.</p>
+              <div className="pt-20 text-4xl flex duration-200">
                 <SocialMedia />
               </div>
             </div>
@@ -42,24 +42,24 @@ export default function AboutMe({ preview }) {
             <h1 className="text-4xl md:text-5xl font-bold tracking-tighter leading-tight md:leading-none mt-12 mb-8">
               About me
             </h1>
-            <div className="mb-8">
-              <p>
-                I am a product manager at the largest e-commerce company in Japan.
-                I have an ability of software development as well as am getting better in marketing and design fields through working with cross-functional teams.
-                I am currently working on product management, project management and sometimes data science.
-              </p>
-              <p>
-                This is a personal blog that stores my experience as a product manager.
-                The website itself is also developed by myself with Next.js and Markdown.
-                If you are interested in the source code, you can find the Github link below.
-              </p>
+            <div>
+              I am a product manager at the largest e-commerce company in Japan.
+              I have an ability of software development as well as am getting better in marketing and design fields through working with cross-functional teams.
+              I am currently working on product management, project management and sometimes data science.
             </div>
-            <CoverImage
-              title={"cover image"}
-              src={HOME_IMAGE_URL}
-              height={630}
-              width={1200}
-            />
+            <div className="my-8">
+              <CoverImage
+                title={"cover image"}
+                src={HOME_IMAGE_URL}
+                height={630}
+                width={1200}
+              />
+            </div>
+            <div>
+              This is a personal blog that stores my experience as a product manager.
+              The website itself is also developed by myself with Next.js and Markdown.
+              If you are interested in the source code, you can find the Github link below.
+            </div>
             <BackToHome />
           </div>
         </Container>
