@@ -29,7 +29,7 @@ export default function AboutMe({ preview }) {
             <div className="lg:px-12 text-lg md:text-xl">
               <p>Hello! I am Hiroki,</p>
               <p className="py-2 text-3xl md:text-4xl font-bold">Product Manager</p>
-              <p>focus on software engineering and data science.</p>
+              <p>focusing on software engineering and data science.</p>
               <p className="py-2">Please have a seat and scroll down.</p>
               <div className="pt-20 text-4xl flex duration-200">
                 <SocialMedia />
@@ -43,9 +43,8 @@ export default function AboutMe({ preview }) {
               About me
             </h1>
             <div>
-              I am a product manager at the largest e-commerce company in Japan.
-              I have an ability of software development as well as am getting better in marketing and design fields through working with cross-functional teams.
-              I am currently working on product management, project management and sometimes data science.
+              I am a product manager with 1+ years of experience in the Internet industry based in Tokyo.
+              Currently, I am working at the largest e-commerce company in Japan.
             </div>
             <div className="my-8">
               <CoverImage
@@ -56,7 +55,7 @@ export default function AboutMe({ preview }) {
               />
             </div>
             <div>
-              This is a personal blog that stores my experience as a product manager.
+              This is a personal blog that stores my experience or thoughts mainly about work.
               The website itself is also developed by myself with Next.js and Markdown.
               If you are interested in the source code, you can find the Github link below.
             </div>
