@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { FaChevronDown } from 'react-icons/fa'
 import Container from '../components/container'
 import Header from '../components/header'
 import Layout from '../components/layout'
@@ -23,17 +24,18 @@ export default function AboutMe({ preview }) {
           <meta property="og:description" content={ABOUT_DESCRIPTION} />
           <meta property="og:image" content={HOME_IMAGE_URL} />               
         </Head>
-        <div className="h-screen flex items-center justify-center bggradient-t from-accent-1 border-b border-accent-2">
+        <div className="h-screen flex items-center justify-center bg-gradient-to-t from-accent-1 border-b border-accent-2">
           <section className="px-5">
             <Header />
             <div className="lg:px-12 text-lg md:text-xl">
               <p>Hello! I am Hiroki,</p>
               <p className="py-2 text-3xl md:text-4xl font-bold">Product Manager</p>
               <p>focusing on software engineering and data science.</p>
-              <p className="py-2">Please have a seat and scroll down.</p>
-              <div className="pt-20 text-4xl flex duration-200">
+              <p className="pt-2">Please have a seat and scroll down.</p>
+              <div className="py-20 text-4xl flex duration-200">
                 <SocialMedia />
               </div>
+              <FaChevronDown title={'Scroll Down'} className="animate-bounce" />
             </div>
           </section>
         </div>
@@ -43,20 +45,33 @@ export default function AboutMe({ preview }) {
               About me
             </h1>
             <div>
-              I am a product manager with 1+ years of experience in the Internet industry based in Tokyo.
-              Currently, I am working at the largest e-commerce company in Japan.
+              I am a product manager in the Internet industry based in Japan.
+              I am currently working at a tech start-up company with many ex-big-tech colleagues to energize people's lives with data.
+              I am in charge of developing a data platform based on machine learning engines to provide data solutions with clients.
+              My background is computational science.
+              I had developed optimization algorithms and machine learning algorithms for mechanical problems.
+              I received the grand prize for my master's thesis by estimating brain injuries using data assimilation and deep learning.
+              When I was a master's student, I developed and evaluated charging controllers for electric vehicle fleet as a research intern in Germany.
+              I think the experience, living and working in the culturally different environment with people from various countries, developed the necessary competencies to excel in the global arena.
+              As a result, I was assigned as a product manager to an international team at the leargest e-commerce company in Japan right after graduation.
+            </div>
+            <div>
+              I love learning many things.
+              It helps me work on product management with cross-functional teams even though I still have less experience.
+              I am willing to moving exciting places over the world.
+              Please feel free to reach out to me on social medias.
             </div>
             <div className="my-8">
               <CoverImage
-                title={"cover image"}
+                title={"About me"}
                 src={HOME_IMAGE_URL}
                 height={630}
                 width={1200}
               />
             </div>
             <div>
-              This is a personal blog that stores my experience or thoughts mainly about work.
-              The website itself is also developed by myself with Next.js and Markdown.
+              This is a personal blog that stores my experience or thoughts about mainly work.
+              I have developed the website itself with Next.js, Tailwind CSS and Markdown.
               If you are interested in the source code, you can find the Github link below.
             </div>
             <BackToHome />
