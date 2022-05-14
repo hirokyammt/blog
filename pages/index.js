@@ -7,7 +7,7 @@ import Layout from '../components/layout'
 import { getAllPosts } from '../lib/api'
 import { HOME_URL, SITE_NAME, HOME_IMAGE_URL, HOME_DESCRIPTION } from '../lib/constants'
 
-const COUNT_PER_PAGE = 9
+const COUNT_PER_PAGE = 7
 
 export default function Index({ posts }) {
   const heroPost = posts[0]
