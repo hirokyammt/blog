@@ -46,19 +46,19 @@ export default function AboutMe({ preview }) {
             </h1>
             <div>
               I am a product manager in the Internet industry based in Japan.
-              I am currently working at a tech start-up company with many ex-big-tech colleagues to energize people's lives with data.
+              I am currently working at a tech start-up company with many ex-big-tech colleagues.
               I am in charge of developing a data platform based on machine learning engines to provide data solutions with clients.
-              My background is computational science.
+              My background is computational science:
               I had developed optimization algorithms and machine learning algorithms for mechanical problems.
               I received the grand prize for my master's thesis by estimating brain injuries using data assimilation and deep learning.
-              When I was a master's student, I developed and evaluated charging controllers for electric vehicle fleet as a research intern in Germany.
-              I think the experience, living and working in the culturally different environment with people from various countries, developed the necessary competencies to excel in the global arena.
-              As a result, I was assigned as a product manager to an international team at the leargest e-commerce company in Japan right after graduation.
+              When I was a master's student, I developed and evaluated charging controllers for electric vehicle fleet as a software engineering intern in Germany.
+              I think that the experience of living and working in the culturally different environment with people from various countries developed the necessary competencies to excel in the global arena.
+              As a result, I was assigned as a product manager to an international team at the leargest e-commerce company in Japan right after my graduation.
             </div>
             <div>
-              I love learning many things.
+              I love learning new things.
               It helps me work on product management with cross-functional teams even though I still have less experience.
-              I am willing to moving exciting places over the world.
+              I am willing to persue any kind of challenges.
               Please feel free to reach out to me on social medias.
             </div>
             <div className="my-8">
@@ -70,7 +70,7 @@ export default function AboutMe({ preview }) {
               />
             </div>
             <div>
-              This is a personal blog that stores my experience or thoughts about mainly work.
+              This is a personal blog that stores my experience or thoughts mainly about work.
               I have developed the website itself with Next.js, Tailwind CSS and Markdown.
               If you are interested in the source code, you can find the Github link below.
             </div>
