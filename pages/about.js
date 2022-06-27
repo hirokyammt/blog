@@ -30,8 +30,8 @@ export default function AboutMe({ preview }) {
             <div className="lg:px-12 text-lg md:text-xl">
               <p>Hello! I am Hiroki,</p>
               <p className="py-2 text-3xl md:text-4xl font-bold">Product Manager</p>
-              <p>focusing on software engineering and data science.</p>
-              <p className="pt-2">Please have a seat and scroll down.</p>
+              <p>focusing on data science and software engineering.</p>
+              <p className="py-2">Please have a seat and scroll down.</p>
               <div className="py-20 text-4xl flex duration-200">
                 <SocialMedia />
               </div>
@@ -45,21 +45,11 @@ export default function AboutMe({ preview }) {
               About me
             </h1>
             <div>
-              I am a product manager in the Internet industry based in Japan.
+              I am a product manager in the Internet industry based in Tokyo.
               I am currently working at a tech start-up company with many ex-big-tech colleagues.
-              I am in charge of developing a data platform based on machine learning engines to provide data solutions with clients.
-              My background is computational science:
-              I had developed optimization algorithms and machine learning algorithms for mechanical problems.
-              I received the grand prize for my master's thesis by estimating brain injuries using data assimilation and deep learning.
-              When I was a master's student, I developed and evaluated charging controllers for electric vehicle fleet as a software engineering intern in Germany.
-              I think that the experience of living and working in the culturally different environment with people from various countries developed the necessary competencies to excel in the global arena.
-              As a result, I was assigned as a product manager to an international team at the leargest e-commerce company in Japan right after my graduation.
-            </div>
-            <div>
-              I love learning new things.
-              It helps me work on product management with cross-functional teams even though I still have less experience.
-              I am willing to persue any kind of challenges.
-              Please feel free to reach out to me on social medias.
+              I am in charge of developing a data platform based on machine learning engines to provide data solutions with clients and energize people's lives with data.
+              The data platform including search engines, recommendation algorithms, targeted advertising and demand prediction models is rapidly introduced by many Japanese giant companies, therefore the machine learning engines are simultaneously improved with a ton of data.
+              I am very excited to participate in the promising product as a product manager at the growth stage.
             </div>
             <div className="my-8">
               <CoverImage
@@ -70,8 +60,25 @@ export default function AboutMe({ preview }) {
               />
             </div>
             <div>
-              This is a personal blog that stores my experience or thoughts mainly about work.
-              I have developed the website itself with Next.js, Tailwind CSS and Markdown.
+              My background is computational science:
+              I had developed optimization algorithms and machine learning algorithms for mechanical problems.
+              I received the grand prize for my master's thesis by estimating brain injuries using data assimilation and deep learning.
+              During my master's degree, I developed and evaluated charging controllers for electric vehicles on a software basis as a full-time software engineering intern in Germany for six months.
+              I think that the experience of living and working in the culturally different environment with people from various countries developed the necessary competencies to excel in the global arena.
+              After my graduation, I was assigned as a product manager to an international team at the largest e-commerce company in Japan.
+              I might not be a specialist for any of software engineering, machine learning or data infrastructure operating.
+              I however am good at product design and teamwork with fluent communication.
+              Additionally, I love learning new things.
+              It helps me work on product management with cross-functional teams even though I still have less experience.
+            </div>
+            <div>
+              I am always looking for stimulating challenges.
+              For that, I am willing to moving any places over the world.
+              Please feel free to reach out to me on any social medias.
+            </div>
+            <div>
+              This website is a personal blog that stores my experience or thoughts mainly about work.
+              I have developed the website itself from scratch with Next.js, Tailwind CSS and Markdown.
               If you are interested in the source code, you can find the Github link below.
             </div>
             <BackToHome />
