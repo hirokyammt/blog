@@ -2,8 +2,8 @@
 title: Benefits and challenges in data-driven marketing
 excerpt: As customers' purchasing behavior has been more diverse, nowadays it has become difficult to turn consumers around by providing information centrally through mass marketing. In order to fulfill individual needs, it is quite hard to succeed in marketing by only experience and intuition.
 coverImage: /assets/benefits-and-challenges-in-data-driven-marketing/cover.webp
-date: "2022-06-24"
-tags: [marketing, data-science]
+date: "2022-07-19"
+tags: [marketing, data]
 ---
 
 As customers' purchasing behavior has been more diverse, nowadays it has become difficult to turn consumers around by providing information centrally through mass marketing. In order to fulfill individual needs, it is quite hard to succeed in marketing by only experience and intuition. Today, marketing has undergone a fundamental shift to data-driven approach. Data-driven marketing is the approach of optimizing brand communications based on customer data to predict their needs, desires and future behaviors when marketing teams build their strategies. As not only customers' behavior has changed to a more diverse one in recent years, but also the cutting-edge technologies make it possible to collect and analyze massive amounts of data about customers and markets, the analysis based on vast amounts of data from various sources will offer insights into customer preferences and broader trends for the highest possible return on investment (ROI).
